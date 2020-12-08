@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Frontlab task</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+  </head>
+  <body>     
+    <div class="main">
+      <div class="sort-selector">
+        <select id = "sort-slct" onchange="sortList()">
+          <option value="0" selected>Random sort</option> 
+          <option value="1">Sort by last name A-Z</option> 
+          <option value="2">Sort by last name Z-A</option>
+        </select>
+      </div>
+      
+      <div id="user_list"></div>   
+
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal modal_userInfo_size" id="modal">
+          <button class="close-button" id="close-button" title="Закрыть окно">X</button>
+          <div class="modal-guts modal_userInfo" role="document">
+            <img class="user_avatarL" />      
+            <div class="textBlock userFIOElement">
+              <div class="text">Name:</div><div class="user_FIO"></div>    
+            </div>
+            <div class="textBlock userFIOElement">
+              <div class="text">Street:</div><div class="text_value user_street"></div> 
+            </div>
+            <div class="textBlock userCityElement">
+              <div class="text">City:</div><div class="text_value user_city"></div>  
+            </div>
+            <div class="textBlock userStateElement">
+              <div class="text">State:</div><div class="text_value user_state"></div> 
+            </div>
+            <div class="textBlock userEmailElement">
+              <div class="text">Email:</div><div class="text_value user_email"></div>  
+            </div>
+            <div class="textBlock userPhoneElement">
+              <div class="text">Phone:</div><div class="text_value user_phone"></div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/main.js"></script>
+</html>
