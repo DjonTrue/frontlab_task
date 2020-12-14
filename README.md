@@ -1,2 +1,2 @@
 # Frontlab_task
-The repository contains a option of the test task implementation
+The repository contains an option of the test task implementation
